@@ -1,24 +1,21 @@
-# README
+# Take-home project - Full Stack Entwickler
+Entwickle eine simple Ruby on Rails-Anwendung für eine Kundendatenbank, die es ermöglicht, Kunden hinzuzufügen. 
+Implementiere dabei eine Dublettenprüfung während des Anlegeprozesses. Die konkrete Umsetzung der Dublettenprüfung liegt in deiner Verantwortung.
+Beschreibe deine Überlegungen und präsentiere dein Ergebnis in einem sinnvollen Format.
+Du solltest zur Umsetzung weniger als 2 Stunden benötigen.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Stack:
+Ruby on Rails 7.1
+PostgreSQL
+Turbo Hotwire/StimulusJS
+MiniTest
 
-* Ruby version
+## Info
+Author:
+Martin Arce
+Januar 2024
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Links
+[Demo](https://kunden.fly.dev/)
+[Repository](https://github.com/divagueame/kunden)
