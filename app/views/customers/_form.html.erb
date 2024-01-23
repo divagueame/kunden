@@ -1,0 +1,32 @@
+<%= form_with(model: customer, class: "") do |form| %>
+  <% if customer.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3 flex items-center gap-4">
+      <%= inline_svg_tag "icons/error.svg", class: "w-10 h-10" %>
+      <ul>
+
+        <% customer.errors.each do |error| %>
+          <li><%= error.message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :first_name,  "Vorname" %>
+    <%= form.text_field :first_name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :last_name, "Nachname" %>
+    <%= form.text_field :last_name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :email, "E-mail" %>
+    <%= form.text_field :email, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div>
+    <%= form.submit "Kunde hinzufügen", class: "rounded-lg py-3 px-5 bg-blue-600 text-white mx-auto block font-medium cursor-pointer" %>
+  </div>
+<% end %>
