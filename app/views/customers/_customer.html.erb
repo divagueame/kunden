@@ -1,0 +1,24 @@
+<div id="<%= dom_id customer %>" class="shadow-md md:shadow-none gap-2 rounded flex flex-col md:flex-row items-center py-2 px-4">
+  <p class="basis-1/3">
+  <span class="font-bold md:hidden">Vorname: </span>
+  <%= customer.first_name.presence || 'N/A' %>
+  </p>
+
+  <p class="basis-1/3">
+  <span class="font-bold md:hidden">Nachname: </span>
+  <%= customer.last_name.presence || 'N/A' %>
+  </p>
+
+  <p class="basis-1/3">
+  <span class="font-bold md:hidden">Email: </span>
+  <%= customer.email %>
+  </p>
+
+  <p class="basis-1/3">
+    <%= customer.created_at.strftime("%d.%m.%Y") %>
+  </p>
+
+  <%= button_to customer_path(customer), method: :delete, class: "rounded-lg inline-block hover:opacity-50 p-1", data: { turbo_confirm: "Sind Sie sicher, dass Sie diesen Kunden löschen möchten?" } do %>
+    <%= inline_svg_tag "icons/delete.svg", class: "w-4 h-4" %>
+  <% end %>
+</div>
