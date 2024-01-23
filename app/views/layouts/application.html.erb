@@ -11,9 +11,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="min-h-screen flex flex-col">
+    <main class="container mx-auto mt-8 md:mt-28 px-8 sm:px-12 lg:px-28 flex">
       <%= yield %>
     </main>
+    <footer class="mt-auto px-12 py-4 bg-orange-200  flex flex-col md:flex-row justify-center items-center gap-8 bg-gradient-to-br from-indigo-300 to-purple-400">
+      <%= link_to "https://github.com/divagueame/kunden", class:"bg-white py-1 px-8 rounded flex shadow gap-8 items-center bg-opacity-80 hover:bg-opacity-100" do %>
+        Martin Arce 2024
+        <%= inline_svg_tag "icons/github.svg", class: "w-6 h-6" %>
+      <% end %>
+    </footer>
   </body>
 </html>
