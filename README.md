@@ -73,3 +73,21 @@ Januar 2024
 ## Links
 [Demo](https://kunden.fly.dev/)
 [Repository](https://github.com/divagueame/kunden)
+
+## Demo
+**Email Unique**
+Ein Beispiel für die Überprüfung eindeutiger E-Mail-Adressen.
+![Email Unique](./public/demo/email_unique.gif)
+
+**Flow**
+Visualisierung eines Arbeitsablaufs oder Prozesses.
+![Flow](./public/demo/flow.gif)
+
+**Neuer Benutzer**
+Demonstration der Benutzerregistrierung.
+![New User](./public/demo/new_user.gif)
+
+
+**Benutzer entfernen**
+Beispiel für das Entfernen eines Benutzers aus dem System.
+![Remove User](./public/demo/remove_user.gif)
